@@ -1,13 +1,28 @@
-import { Navbar } from "../components/Navbar"
+import { Card, Header, Navbar } from "../components";
+import { Page } from "../main";
 
-function Skills() {
+interface Card {
+    title: string;
+    description: string;
+    src: string;
+    alt: string;
+}
+
+interface Props {
+    page: Page;
+    cards: Card[];
+}
+
+export function Skills({ page, cards }: Props): JSX.Element {
 
     return (
         <>
             <Navbar />
-            <div>Skills</div>
+            <Header title={page.header} />
+            <p>{page.description}</p>
+            {cards.map((card, key) => (
+                <Card key={key} title={card.title} description={card.description} src={card.src} alt={card.alt} />
+            ))}
         </>
     )
 }
-
-export default Skills

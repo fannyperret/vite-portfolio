@@ -1,13 +1,17 @@
-import { Navbar } from "../components/Navbar"
+import { Header, Navbar } from "../components";
+import { Page } from "../main";
 
-function Projects() {
+interface Props {
+    page: Page;
+}
+
+export function Projects({ page }: Props): JSX.Element {
 
     return (
         <>
             <Navbar />
-            <div>Projects</div>
+            <Header title={page.header} />
+            <p>{page.description}</p>
         </>
     )
 }
-
-export default Projects

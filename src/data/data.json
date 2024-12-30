@@ -1,0 +1,118 @@
+{
+    "menu": [
+        {
+            "url": "/",
+            "name": "About"
+        },
+        {
+            "url": "/skills",
+            "name": "Skills"
+        },
+        {
+            "url": "/projects",
+            "name": "Projects"
+        },
+        {
+            "url": "/contact",
+            "name": "Contact"
+        }
+    ],
+    "pages": {
+        "home": {
+            "header": "Hello I'm Fanny, a Frontend Developer.",
+            "description": "I’m a french Web Developer.",
+            "description_two": "I like draw in CSS, create templates on Figma and code in React and Typescript at the same time :)",
+            "buttons": [
+                {
+                    "name": "Contact me",
+                    "type": "button",
+                    "section": "/contact"
+                },
+                {
+                    "name": "View work",
+                    "type": "button",
+                    "section": "/projects"
+                }
+            ],
+            "social_media": [
+                {
+                    "link": "/linkedin",
+                    "icon": "linkedin"
+                },
+                {
+                    "link": "/https://github.com/fannyperret",
+                    "icon": "github"
+                },
+                {
+                    "link": "/https://x.com/?lang=fr&mx=2",
+                    "icon": "x"
+                },
+                {
+                    "link": "#",
+                    "icon": "blog"
+                }
+            ],
+            "img": {
+                "alt": "Portrait of a woman developer",
+                "src": "/"
+            }
+        },
+        "skills": {
+            "header": "My skills, what I like!",
+            "description": "What I'm using the most."
+        },
+        "projects": {
+            "header": "Projects",
+            "description": "In progress..."
+        },
+        "contact": {
+            "header": "Contact me :)",
+            "description": "If you want to to talk about code :)"
+        }
+    },
+    "cards": [
+        {
+            "title": "HTML5",
+            "description": "Lorem ipsum",
+            "src": "src",
+            "alt": "logo html5"
+        },
+        {
+            "title": "CSS3",
+            "description": "Lorem ipsum",
+            "src": "src",
+            "alt": "logo css3"
+        },
+        {
+            "title": "JavaScript",
+            "description": "Lorem ipsum",
+            "src": "src",
+            "alt": "logo javascript"
+        },
+        {
+            "title": "Typescript",
+            "description": "Lorem ipsum",
+            "src": "src",
+            "alt": "logo typescript"
+        },
+        {
+            "id": 4,
+            "title": "React",
+            "description": "Lorem ipsum",
+            "src": "src",
+            "alt": "logo react"
+        },
+        {
+            "title": "Figma",
+            "description": "Lorem ipsum",
+            "src": "src",
+            "alt": "logo figma"
+        },
+        {
+            "title": "GraphQl",
+            "description": "Lorem ipsum",
+            "src": "src",
+            "alt": "logo graphql"
+        }
+    ]
+}

@@ -1,16 +1,21 @@
-import { NavLink } from "react-router";
+import { NavLink } from "react-router"
+import data from '../data/data.json'
+
+interface Nav {
+    url: string;
+    name: string;
+}
 
 export function Navbar() {
+    const menu: Nav[] = data.menu;
+
     return (
         <nav>
-            <NavLink to="/" end>
-                About
-            </NavLink>
-            <NavLink to="/skills" end>
-                Skills
-            </NavLink>
-            <NavLink to="/projects">Projects</NavLink>
-            <NavLink to="/contact">Contact</NavLink>
+            {menu.map(( nav, key ) => (
+                <NavLink key={key} to={nav.url}>
+                    {nav.name}
+                </NavLink>
+            ))}
         </nav>
     );
 }
